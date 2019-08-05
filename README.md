@@ -10,8 +10,8 @@ Just-in-time (JIT) compilation. This is what you get when you install the `dotne
 
 ## `CoreCLR.ReadyToRun`
 
-Pre-JIT compilation. The JIT is run ahead-of-time so there's less work to do when first starting your app, but uses the same `CoreCLR` runtime.
+Pre-JIT compilation. The JIT is run ahead-of-time so there's less work to do when first starting your app, but uses the same [CoreCLR](https://github.com/dotnet/coreclr) runtime.
 
 ## `CoreRT.AOT`
 
-Full ahead-of-time compilation with a specially optimized runtime.
+Full ahead-of-time compilation with a specially optimized runtime called [CoreRT](https://github.com/dotnet/corert).
