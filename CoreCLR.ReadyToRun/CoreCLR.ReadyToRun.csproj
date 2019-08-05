@@ -6,8 +6,4 @@
     <PublishReadyToRun>true</PublishReadyToRun>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.NETCore.CoreDisTools" Version="1.0.1-prerelease-00005" />
-  </ItemGroup>
-
 </Project>
