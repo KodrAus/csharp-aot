@@ -6,6 +6,7 @@ namespace CoreCLR.JIT
     {
         static void Main(string[] args)
         {
+            Console.ReadLine();
             Console.WriteLine("Hello World!");
         }
     }
