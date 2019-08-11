@@ -7,7 +7,6 @@ namespace CoreRT.AOT
         static void Main(string[] args)
         {
             Console.ReadLine();
-            Console.WriteLine("Hello World!");
         }
     }
 }
