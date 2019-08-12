@@ -13,7 +13,7 @@
   </PropertyGroup>
 
   <ItemGroup Condition=" '$(AOT)' == 'true' ">
-    <PackageReference Include="Microsoft.DotNet.ILCompiler" Version="1.0.0-*" />
+    <PackageReference Include="Microsoft.DotNet.ILCompiler" Version="1.0.0-alpha-28010-01" />
 
     <IlcArg Include="--completetypemetadata" />
   </ItemGroup>
