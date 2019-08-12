@@ -15,3 +15,7 @@ Pre-JIT compilation. The JIT is run ahead-of-time so there's less work to do whe
 ## `CoreRT.AOT`
 
 Full ahead-of-time compilation with a specially optimized runtime called [CoreRT](https://github.com/dotnet/corert).
+
+## `Startup`
+
+A motivating example for ahead-of-time compilation using serverless workloads.

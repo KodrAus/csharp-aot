@@ -26,6 +26,6 @@ We can view the native stack:
 bt
 ```
 
-it includes both the native CoreRT frames and our C#, because it's compiled and linked together ahead-of-time using a native toolchain.
+it includes both the native CoreRT frames and our C#, because it's compiled and linked together ahead-of-time using a native toolchain. Using a command like `gui` can let us explore these native frames more easily.
 
 On Windows and Linux you should be able to see C# source inline (it looks like CoreRT might have trouble with Mach-O debug symbols).

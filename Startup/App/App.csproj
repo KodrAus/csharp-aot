@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(ReadyToRun)' == 'true' ">
+    <PublishReadyToRun>true</PublishReadyToRun>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(AOT)' == 'true' ">
+    <IlcOptimizationPreference>Speed</IlcOptimizationPreference>
+  </PropertyGroup>
+
+  <ItemGroup Condition=" '$(AOT)' == 'true' ">
+    <PackageReference Include="Microsoft.DotNet.ILCompiler" Version="1.0.0-*" />
+
+    <IlcArg Include="--completetypemetadata" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="out/**" />
+    <Content Remove="NuGet.config" />
+  </ItemGroup>
+
+</Project>
