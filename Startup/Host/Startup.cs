@@ -41,6 +41,8 @@ namespace Host
                     throw new ArgumentException("unexpected kind");
                 }
 
+                var proxyWatch = Stopwatch.StartNew();
+
                 using var process = new CaptiveProcess($"{Environment.CurrentDirectory}/App/out/{kind}/App", "--urls http://localhost:5004");
                 using var client = new HttpClient();
                 
@@ -57,6 +59,9 @@ namespace Host
                         };
 
                         using var res = await client.SendAsync(req);
+
+                        proxyWatch.Stop();
+                        ctx.Response.Headers["X-TAKEN"] = proxyWatch.ElapsedMilliseconds.ToString();
 
                         ctx.Response.StatusCode = (int) res.StatusCode;
                         await res.Content.CopyToAsync(ctx.Response.Body);
