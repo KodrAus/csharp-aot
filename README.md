@@ -1,7 +1,5 @@
 # C# Ahead-of-time
 
-> This sample is a work-in-progress. There's nothing to see here yet :)
-
 Some examples of compiling C# ahead-of-time.
 
 ## `CoreCLR.JIT`
